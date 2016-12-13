@@ -21,7 +21,8 @@
     },
     {
       "match": ":[a-z_]+",
-      "name": "constant.other.alpaca"
+      "name": "constant.language.alpaca",
+      "comment": "atoms, i.e. :value"
     },
     {
       "match": "[|!%$?~+\\-.=</>&\\\\*^]+\\s+",
@@ -29,7 +30,8 @@
     },
     {
       "match": "[ \\\\t\\\\(]_[ \\\\t\\\\)]",
-      "name": "variable.other"
+      "name": "variable.other",
+      "comment": "empty var match _"
     }
   ],
   "repository": {
