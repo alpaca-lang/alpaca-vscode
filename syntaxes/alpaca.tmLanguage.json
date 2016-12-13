@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Alpaca",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "match": "^[a-z][A-Za-z0-9_']*\\s+",
+      "name": "entity.name.function.alpaca"
+    },  
+    {
+      "match": "(\\b([0-9]+)\\b)",
+      "name": "constant.numeric.alpaca"
+    },
+    {
+      "match": ":[a-z_]+",
+      "name": "constant.other.alpaca"
+    },
+    {
+      "match": "[|!%$?~+\\-.=</>&\\\\*^]+\\s+",
+      "name": "keyword.operator.alpaca"
+    },
+    {
+      "match": "[ \\\\t\\\\(]_[ \\\\t\\\\)]",
+      "name": "variable.other"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.alpaca",
+          "match": "\\b(let|in|receive|send|type|case|of|beam|with|match)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.alpaca",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.alpaca",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {  
+          "begin": "--",
+          "end": "$",
+          "name": "comment.line.alpaca"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.alpaca"
+}

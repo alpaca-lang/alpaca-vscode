@@ -1,0 +1,26 @@
+{
+    "name": "alpaca",
+    "displayName": "Alpaca",
+    "description": "Syntax highlighting for Alpaca, the ML-inspired language that runs on the Erlang VM",
+    "version": "0.0.1",
+    "publisher": "lepoetemaudit",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "alpaca",
+            "aliases": ["Alpaca", "alpaca"],
+            "extensions": [".alp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "alpaca",
+            "scopeName": "source.alpaca",
+            "path": "./syntaxes/alpaca.tmLanguage.json"
+        }]
+    }
+}
