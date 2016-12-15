@@ -1,4 +1,4 @@
-# Alpaca VSCode
+# Alpaca - Visual Studio Code
 
 Basic syntax highlighting support for Alpaca in VS Code.
 
