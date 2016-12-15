@@ -4,6 +4,7 @@
     "description": "Syntax highlighting for Alpaca, the ML-inspired language that runs on the Erlang VM",
     "version": "0.0.1",
     "publisher": "lepoetemaudit",
+    "repository": "https://github.com/alpaca-lang/alpaca-vscode",
     "engines": {
         "vscode": "^1.5.0"
     },
