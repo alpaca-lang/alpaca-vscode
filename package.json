@@ -2,7 +2,7 @@
     "name": "alpaca",
     "displayName": "Alpaca",
     "description": "Syntax highlighting for Alpaca, the ML-inspired language that runs on the Erlang VM",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "images/icon.png",
     "publisher": "lepoetemaudit",
     "repository": {
