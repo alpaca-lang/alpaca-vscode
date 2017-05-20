@@ -30,6 +30,12 @@
             "language": "alpaca",
             "scopeName": "source.alpaca",
             "path": "./syntaxes/alpaca.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "alpaca",
+                "path": "./snippets/alpaca.json"
+            }
+        ]
     }
 }

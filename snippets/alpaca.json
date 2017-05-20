@@ -1,0 +1,40 @@
+{
+    "let": {
+        "prefix": "let",
+        "body": "let $1 = $0",
+        "description": "let",
+        "scope": "source.alpaca"
+    },
+    "fn": {
+        "prefix": "fn",
+        "body": "fn $1 -> $0",
+        "description": "fn",
+        "scope": "source.alpaca"
+    },
+    "test": {
+        "prefix": "test",
+        "body": "test \"$1\" = $0",
+        "description": "test",
+        "scope": "source.alpaca"
+    },
+    "match": {
+        "prefix": "match",
+        "body": [
+            "match $1",
+            "\t  $2 -> $3",
+            "\t| $4 -> $5"
+        ],
+        "description": "match",
+        "scope": "source.alpaca"
+    },
+    "receive": {
+        "prefix": "receive",
+        "body": [
+            "receive",
+            "\t  $1 -> $2",
+            "\t| $3 -> $4"
+        ],
+        "description": "receive",
+        "scope": "source.alpaca"
+    }
+}
